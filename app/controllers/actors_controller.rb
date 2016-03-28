@@ -41,4 +41,5 @@ class ActorsController < ApplicationController
     params.require(:actor).permit(:name, :year_of_birth, :thumbnail)
   end
 
+
 end

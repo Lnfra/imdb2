@@ -1,8 +1,5 @@
 class MoviesController < ApplicationController
 
-  # Fill in the movies_controller.rb with the following methods and corresponding code: index, show, new, create, edit, update
-  # The Movie params are :title, :summary, :youtube_embeded_id, and :thumbnail
-
   def index
     @movies = Movie.all
   end
@@ -45,4 +42,6 @@ class MoviesController < ApplicationController
   def movie_params
     parms.require(:movie).permit(:title, :summary, :youtube_embeded_id, :thumbnail)
   end
+
 end
+
